@@ -1,3 +1,40 @@
+"""
+INPUT:
+===== HỆ THỐNG NGÂN HÀNG ĐIỂM SỐ RIKKEI ACADEMY =====
+1. Hiển thị sao kê điểm số
+2. Đổi điểm lấy phần thưởng
+3. Phúc khảo bài thi (Hoàn điểm)
+4. Kích hoạt (Hệ số nhân điểm)
+5. Chấm bài (thêm điểm)
+6. Thoát chương trình
+=====================================================
+Chọn chức năng (1-5):
+CHO NGƯỜI DÙNG NHẬP VÀO LỰA CHỌN VÀ THỰC HIỆN CÁC CHÚC NĂNG ĐỀ BÀI YÊU CẦU
+OUTPUT:
+Yêu cầu: Viết hàm display_statements(records) để in ra toàn bộ dữ liệu. Quy định trạng thái:
+
+Điểm hiện có < 500: "Cần tích lũy thêm "
+500 <= Điểm hiện có <= 1500: "Thành viên tiềm năng "
+Điểm hiện có > 1500: "Thành viên ưu tú "
+
+*** Yêu cầu: Viết hàm appeal_score(records). Do hệ thống chấm nhầm, học viên phải "trả lại" quà đã đổi để lấy lại điểm, hoặc giáo vụ hoàn lại điểm đã trừ sai. Yêu cầu nhập:
+
+Nhập mã học viên:
+Nhập số điểm cần hoàn: Kiểm tra hợp lệ. Số điểm hoàn không được vượt quá số điểm đã tiêu (spent_points). Nếu hợp lệ: giảm spent_points, tăng current_points, tăng refunded_points.
+
+*** Chức năng 4: Kích hoạt hệ số nhân điểm cho học viên trong các dịp lễ.  
+
+*** Yêu cầu: Viết hàm activate_multiplier(records). Trong các tuần lễ đặc biệt, học viên làm bài sẽ được nhân hệ số điểm (x1.5, x2.0...). Yêu cầu nhập:
+
+Nhập mã học viên:
+Nhập hệ số nhân mới (Ví dụ 1.5): Hệ số phải là số thực (float) nằm trong khoảng từ 1.0 đến 3.0. Quá 3.0 không được phép (tránh lạm phát điểm).
+
+** Yêu cầu: Viết hàm grade_assignment(records). Yêu cầu nhập:
+
+Nhập mã học viên:
+Nhập số điểm gốc đạt được: Hệ thống sẽ tự động tính: Điểm thực nhận = Điểm gốc * Hệ số nhân (multiplier). Sau đó cộng Điểm thực nhận vào current_points.
+"""
+
 student_records = [
     {
         "student_id": "RA01",
